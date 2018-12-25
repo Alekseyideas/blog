@@ -1,0 +1,28 @@
+.slick-arrow {
+  background: white url("./assets/images/arrow.svg") no-repeat center / cover;
+  font-size: 0;
+  outline: 0;
+}
+
+.pagination {
+
+  .next,.previous{
+
+    a {
+      background: white url("./assets/images/arrow.svg") no-repeat center / cover;
+      height: 20px;
+      width: 20px;
+
+      @include minLg {
+
+        &:hover {
+          opacity: .5;
+        }
+
+        &:active {
+          opacity: .2;
+        }
+      }
+    }
+  }
+}

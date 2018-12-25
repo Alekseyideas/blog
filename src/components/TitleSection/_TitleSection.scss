@@ -1,0 +1,23 @@
+.titleSection {
+	font-weight: 900;
+	letter-spacing: .5px;
+	padding-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+
+	&:after,
+	&:before {
+		background: $grey;
+		content: '';
+		display: block;
+		height: 2px;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+
+	&:after {
+		background: $accent;
+		width: 30%;
+	}
+}

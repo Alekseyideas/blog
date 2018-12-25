@@ -1,0 +1,28 @@
+.footer {
+	background: black;
+
+	&__wrapper {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		min-height: $footerHeight;
+
+		a {
+			font-size: .8rem;
+			margin: 0 0 0 10px;
+
+			&:first-child {
+				margin: 0;
+			}
+
+			&.active {
+				color: white;
+
+				&:hover {
+					cursor: default;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

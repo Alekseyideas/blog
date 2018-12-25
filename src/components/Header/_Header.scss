@@ -1,0 +1,110 @@
+.header {
+	background: white;
+	border-bottom: 1px solid $grey;
+	z-index: 9;
+	position: relative;
+
+	&__wrapper {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		height: $headerHeight;
+		padding: 10px 0;
+	}
+
+	&__logo {
+		display: block;
+		height: 100%;
+		max-height: 60px;
+	}
+
+	&__nav {
+
+		a {
+			font-weight: 600;
+			margin: 0 0 0 10px;
+			text-transform: uppercase;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&.active {
+				color: black;
+				cursor: default;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__mobile-menu {
+		border: 0;
+		display: block;
+		outline: 0;
+		-webkit-appearance: none;
+
+		span {
+			background: black;
+			display: block;
+			height: 4px;
+			margin: 3px 0;
+			width: 30px;
+			transition: transform 0.2s ease;
+		}
+
+		&.active {
+
+			span {
+
+				&:nth-child(1) {
+					transform: rotate(-45deg);
+					transition: transform 0.2s ease;
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+					transform: rotate(45deg);
+					transition: transform 0.2s ease;
+					margin-top: -14px;
+				}
+			}
+		}
+
+		@include minMd {
+			display: none;
+		}
+	}
+
+	@include maxMd {
+
+		$animationTransition: .2s;
+		&__nav {
+			background: black;
+			display: none;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 100%;
+			width: 100%;
+
+			a {
+				display: block;
+				margin: 20px 0;
+
+				&.active {
+					color: white;
+				}
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+	}
+}

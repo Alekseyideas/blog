@@ -1,0 +1,4 @@
+@mixin bg_img($page, $name) {
+	$url: "./assets/images/#{$page}/#{$name}";
+	background-image: url($url);
+}

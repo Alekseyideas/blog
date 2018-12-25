@@ -1,0 +1,39 @@
+.comment {
+	display: flex;
+	margin: 40px 0 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $grey;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	&__user-img {
+		background: $grey no-repeat center bottom /70%;
+		border-radius: 50%;
+		height: 50px;
+		@include bg_img('','user.svg');
+		margin-right: 20px;
+		width: 50px;
+		min-width: 50px;
+	}
+
+	&__user-name {
+		display: block;
+		font-size: 1.2rem;
+	}
+
+	&__user-email {
+		color: grey;
+		display: block;
+		font-size: .8rem;
+		font-weight: 300;
+		margin-top: 2px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: .9rem;
+		line-height: 1.4em;
+	}
+}

@@ -1,0 +1,10 @@
+$font: 400 .8rem sans-serif;
+
+$headerHeight: 90px;
+$footerHeight: 70px;
+
+$mainHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} ) - 1px);
+
+$grey: #e3e3e3;
+$turquoise: #6DE9FF;
+$accent: #4172b3;

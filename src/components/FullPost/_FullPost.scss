@@ -1,0 +1,49 @@
+.post {
+	&__title {
+		font-size: 2.2rem;
+		margin: 0;
+		text-transform: uppercase;
+
+		@include minSm {
+			font-size: 3rem;
+		}
+	}
+
+	&__author {
+		color: grey;
+		display: block;
+
+
+		span {
+			color: darken($turquoise, 30);
+			margin-left: 5px;
+		}
+	}
+
+	&__body {
+		font-weight: 300;
+		color: grey;
+		font-size: 1.2rem;
+
+		@include minSm {
+			font-size: .9rem;
+		}
+	}
+
+	&__image {
+		float: left;
+
+		@include minSm {
+			padding-right: 20px;
+		}
+
+		img {
+			max-height: 400px;
+		}
+	}
+
+	&__wrapper {
+		margin-bottom: 40px;
+	}
+
+}

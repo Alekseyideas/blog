@@ -1,0 +1,53 @@
+html {
+	//font-size: 10px;
+}
+
+body {
+	font: $font;
+	margin: 0;
+}
+
+a {
+	color: grey;
+	outline: 0;
+	text-decoration: none;
+	transition: .2s;
+
+	@include minLg {
+
+		&:hover {
+			opacity: .5;
+			outline: 0;
+			text-decoration: none;
+		}
+	}
+}
+
+div,section,main, header, footer {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+main {
+	min-height: $mainHeight;
+	padding: 30px 0;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+.container {
+
+	@include maxMd {
+		padding: 0 10px;
+	}
+}
